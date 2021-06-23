@@ -39,7 +39,7 @@ export function Home(){
             },
             category: '1',
             date: '22/06 ás 20:40h',
-            description: 'Quem quer um pouco de DRAVENeeeeeeee'
+            description: 'Quem quer um pouco de DRAVEN'
         }
     ]
 

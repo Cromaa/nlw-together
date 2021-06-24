@@ -40,7 +40,7 @@ export function Home(){
             category: '1',
             date: '22/06 ás 20:40h',
             description: 'Quem quer um pouco de DRAVEN'
-        }
+        },
     ]
 
     function handleAppointmentCreate(){
@@ -75,13 +75,11 @@ export function Home(){
                 categorySelected = {category}
                 setCategory = {handleCategorySelect}
             />
-
-            <View style = {styles.content}>
-                <ListHeader
-                    title = 'Partidas agendadas'
-                    subtitle = 'Total 0'
-                />
-            </View>
+ 
+            <ListHeader
+                title = 'Partidas agendadas'
+                subtitle = 'Total 0'
+            />        
 
             <FlatList 
                 data = {appointments}
@@ -93,6 +91,7 @@ export function Home(){
                     />
                 )}
                 ItemSeparatorComponent = {() => <ListDivider/>}
+                contentContainerStyle = {{paddingBottom: 69}}
                 style = {styles.matches}
                 showsVerticalScrollIndicator = {false}
             />

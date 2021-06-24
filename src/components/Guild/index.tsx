@@ -15,7 +15,7 @@ export type GuildProps = {
 }
 
 type Props = TouchableOpacityProps & {
-    data: GuildProps
+    data: GuildProps;
 }
 
 export function Guild({data, ...rest}: Props){
